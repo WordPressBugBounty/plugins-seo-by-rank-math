@@ -235,8 +235,20 @@ class Common {
 	 * @return object|false Primary term on success, false if there are no terms, WP_Error on failure.
 	 */
 	private function get_primary_term( $taxonomy, $post_id ) {
+		// Early Bail if Primary taxonomy is not enabled on the site.
+		$post_type = get_post_type( $post_id );
+		if ( empty( $post_type ) || ! Helper::get_settings( 'titles.pt_' . $post_type . '_primary_taxonomy', false ) ) {
+			return false;
+		}
+
 		$primary = Helper::get_post_meta( "primary_{$taxonomy}", $post_id );
 		if ( ! $primary ) {
+			return false;
+		}
+
+		// Early Bail if Primary term is not assigned to the post.
+		$terms = wp_get_post_terms( $post_id, $taxonomy, [ 'fields' => 'ids' ] );
+		if ( empty( $terms ) || ! in_array( $primary, $terms, true ) ) {
 			return false;
 		}
 

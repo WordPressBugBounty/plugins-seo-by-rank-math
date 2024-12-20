@@ -5,7 +5,7 @@ Tags: seo, sitemap, google search console, schema, redirection, WordPress SEO
 Tested up to: 6.7
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0.234
+Stable tag: 1.0.234.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -458,5 +458,8 @@ Please drop us an email at support@rankmath.com and we would be more than happy 
 - Fixed: Default Open Graph image was not added to the Twitter tag on Taxonomy pages when the [Use Data from Facebook Tab option](https://rankmath.com/kb/meta-box-social-tab/#use-data-from-facebook-tab) was enabled
 - Fixed: UI issues on the [Content AI page](https://rankmath.com/kb/how-to-use-content-ai-tools/) in WordPress 6.7
 
+= 1.0.234.1 [Dec 20, 2024] =
+- Fixed: Product pages were showing a 404 error on some sites due to an incorrect [Primary Category](https://rankmath.com/kb/how-to-choose-a-primary-category/) stored in the database
+- Fixed: Error on the [Settings page](https://rankmath.com/kb/general-settings/) when using a PHP function name as a value in any field
 
 Full changelog can be found here - **[Rank Math changelog](https://rankmath.com/changelog/?utm_source=Plugin&utm_medium=Changelog&utm_campaign=WP)**
