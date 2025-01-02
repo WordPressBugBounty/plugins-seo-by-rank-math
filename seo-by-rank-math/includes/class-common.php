@@ -36,6 +36,7 @@ class Common {
 		// Change Permalink for primary term.
 		$this->filter( 'post_type_link', 'post_type_link', 9, 2 );
 		$this->filter( 'post_link_category', 'post_link_category', 10, 3 );
+		$this->filter( 'wc_product_post_type_link_product_cat', 'post_link_category', 10, 3 );
 
 		// Reorder categories listing: put primary at the beginning.
 		$this->filter( 'get_the_terms', 'reorder_the_terms', 10, 3 );
@@ -248,7 +249,7 @@ class Common {
 
 		// Early Bail if Primary term is not assigned to the post.
 		$terms = wp_get_post_terms( $post_id, $taxonomy, [ 'fields' => 'ids' ] );
-		if ( empty( $terms ) || ! in_array( $primary, $terms, true ) ) {
+		if ( empty( $terms ) || ! in_array( absint( $primary ), $terms, true ) ) {
 			return false;
 		}
 
