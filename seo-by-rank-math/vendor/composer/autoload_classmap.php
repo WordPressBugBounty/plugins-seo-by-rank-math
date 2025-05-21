@@ -240,6 +240,7 @@ return array(
     'RankMath\\Rest\\Post' => $baseDir . '/includes/rest/class-post.php',
     'RankMath\\Rest\\Rest_Helper' => $baseDir . '/includes/rest/class-rest-helper.php',
     'RankMath\\Rest\\Sanitize' => $baseDir . '/includes/rest/class-sanitize.php',
+    'RankMath\\Rest\\Setup_Wizard' => $baseDir . '/includes/rest/class-setup-wizard.php',
     'RankMath\\Rest\\Shared' => $baseDir . '/includes/rest/class-shared.php',
     'RankMath\\Rewrite' => $baseDir . '/includes/class-rewrite.php',
     'RankMath\\Robots_Txt' => $baseDir . '/includes/modules/robots-txt/class-robots-txt.php',

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3099790155f76cc59776145f3e225162
+class ComposerStaticInited21d742ab145784e526b4a0a26df5eb
 {
     public static $files = array (
         'da5f6548f070d3d306f90eee42dd5de6' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgentParser.php',
@@ -270,6 +270,7 @@ class ComposerStaticInit3099790155f76cc59776145f3e225162
         'RankMath\\Rest\\Post' => __DIR__ . '/../..' . '/includes/rest/class-post.php',
         'RankMath\\Rest\\Rest_Helper' => __DIR__ . '/../..' . '/includes/rest/class-rest-helper.php',
         'RankMath\\Rest\\Sanitize' => __DIR__ . '/../..' . '/includes/rest/class-sanitize.php',
+        'RankMath\\Rest\\Setup_Wizard' => __DIR__ . '/../..' . '/includes/rest/class-setup-wizard.php',
         'RankMath\\Rest\\Shared' => __DIR__ . '/../..' . '/includes/rest/class-shared.php',
         'RankMath\\Rewrite' => __DIR__ . '/../..' . '/includes/class-rewrite.php',
         'RankMath\\Robots_Txt' => __DIR__ . '/../..' . '/includes/modules/robots-txt/class-robots-txt.php',
@@ -394,9 +395,9 @@ class ComposerStaticInit3099790155f76cc59776145f3e225162
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3099790155f76cc59776145f3e225162::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3099790155f76cc59776145f3e225162::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit3099790155f76cc59776145f3e225162::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInited21d742ab145784e526b4a0a26df5eb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInited21d742ab145784e526b4a0a26df5eb::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInited21d742ab145784e526b4a0a26df5eb::$classMap;
 
         }, null, ClassLoader::class);
     }
