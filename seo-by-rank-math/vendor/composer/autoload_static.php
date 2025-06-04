@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInited21d742ab145784e526b4a0a26df5eb
+class ComposerStaticInit2a0deae7236f5bdda8c0d90cfa1fed9c
 {
     public static $files = array (
         'da5f6548f070d3d306f90eee42dd5de6' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgentParser.php',
@@ -395,9 +395,9 @@ class ComposerStaticInited21d742ab145784e526b4a0a26df5eb
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInited21d742ab145784e526b4a0a26df5eb::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInited21d742ab145784e526b4a0a26df5eb::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInited21d742ab145784e526b4a0a26df5eb::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2a0deae7236f5bdda8c0d90cfa1fed9c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2a0deae7236f5bdda8c0d90cfa1fed9c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2a0deae7236f5bdda8c0d90cfa1fed9c::$classMap;
 
         }, null, ClassLoader::class);
     }
