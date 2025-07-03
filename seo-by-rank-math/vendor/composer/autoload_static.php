@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite92db582af7f0b31201b420714a966d4
+class ComposerStaticInit1e1b28dee0e948121aaebf0eab65f140
 {
     public static $files = array (
         'da5f6548f070d3d306f90eee42dd5de6' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgentParser.php',
@@ -191,6 +191,7 @@ class ComposerStaticInite92db582af7f0b31201b420714a966d4
         'RankMath\\Helpers\\Options' => __DIR__ . '/../..' . '/includes/helpers/class-options.php',
         'RankMath\\Helpers\\Param' => __DIR__ . '/../..' . '/includes/helpers/class-param.php',
         'RankMath\\Helpers\\Post_Type' => __DIR__ . '/../..' . '/includes/helpers/class-post-type.php',
+        'RankMath\\Helpers\\Schedule' => __DIR__ . '/../..' . '/includes/helpers/class-schedule.php',
         'RankMath\\Helpers\\Schema' => __DIR__ . '/../..' . '/includes/helpers/class-schema.php',
         'RankMath\\Helpers\\Security' => __DIR__ . '/../..' . '/includes/helpers/class-security.php',
         'RankMath\\Helpers\\Sitepress' => __DIR__ . '/../..' . '/includes/helpers/class-sitepress.php',
@@ -395,9 +396,9 @@ class ComposerStaticInite92db582af7f0b31201b420714a966d4
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite92db582af7f0b31201b420714a966d4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite92db582af7f0b31201b420714a966d4::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInite92db582af7f0b31201b420714a966d4::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1e1b28dee0e948121aaebf0eab65f140::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1e1b28dee0e948121aaebf0eab65f140::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1e1b28dee0e948121aaebf0eab65f140::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -161,6 +161,7 @@ return array(
     'RankMath\\Helpers\\Options' => $baseDir . '/includes/helpers/class-options.php',
     'RankMath\\Helpers\\Param' => $baseDir . '/includes/helpers/class-param.php',
     'RankMath\\Helpers\\Post_Type' => $baseDir . '/includes/helpers/class-post-type.php',
+    'RankMath\\Helpers\\Schedule' => $baseDir . '/includes/helpers/class-schedule.php',
     'RankMath\\Helpers\\Schema' => $baseDir . '/includes/helpers/class-schema.php',
     'RankMath\\Helpers\\Security' => $baseDir . '/includes/helpers/class-security.php',
     'RankMath\\Helpers\\Sitepress' => $baseDir . '/includes/helpers/class-sitepress.php',
