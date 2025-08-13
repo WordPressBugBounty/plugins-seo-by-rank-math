@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit1aa411eedcc6ecfefe6cd2fb24f96cdc
+class ComposerStaticInit366105ca8fc758093b2a4a29dc439fd4
 {
     public static $files = array (
         'da5f6548f070d3d306f90eee42dd5de6' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgentParser.php',
@@ -74,6 +74,7 @@ class ComposerStaticInit1aa411eedcc6ecfefe6cd2fb24f96cdc
         'RankMath\\Admin\\Assets' => __DIR__ . '/../..' . '/includes/admin/class-assets.php',
         'RankMath\\Admin\\Bulk_Actions' => __DIR__ . '/../..' . '/includes/admin/class-bulk-actions.php',
         'RankMath\\Admin\\CMB2_Fields' => __DIR__ . '/../..' . '/includes/admin/class-cmb2-fields.php',
+        'RankMath\\Admin\\CMB2_Options' => __DIR__ . '/../..' . '/includes/admin/class-cmb2-options.php',
         'RankMath\\Admin\\Database\\Clauses' => __DIR__ . '/../..' . '/includes/admin/database/class-clauses.php',
         'RankMath\\Admin\\Database\\Database' => __DIR__ . '/../..' . '/includes/admin/database/class-database.php',
         'RankMath\\Admin\\Database\\Escape' => __DIR__ . '/../..' . '/includes/admin/database/class-escape.php',
@@ -111,7 +112,9 @@ class ComposerStaticInit1aa411eedcc6ecfefe6cd2fb24f96cdc
         'RankMath\\Admin\\Post_Columns' => __DIR__ . '/../..' . '/includes/admin/class-post-columns.php',
         'RankMath\\Admin\\Post_Filters' => __DIR__ . '/../..' . '/includes/admin/class-post-filters.php',
         'RankMath\\Admin\\Pro_Notice' => __DIR__ . '/../..' . '/includes/admin/class-pro-notice.php',
+        'RankMath\\Admin\\Register_Options_Page' => __DIR__ . '/../..' . '/includes/admin/class-register-options-page.php',
         'RankMath\\Admin\\Registration' => __DIR__ . '/../..' . '/includes/admin/class-registration.php',
+        'RankMath\\Admin\\Sanitize_Settings' => __DIR__ . '/../..' . '/includes/admin/class-sanitize-settings.php',
         'RankMath\\Admin\\Setup_Wizard' => __DIR__ . '/../..' . '/includes/admin/class-setup-wizard.php',
         'RankMath\\Admin\\Watcher' => __DIR__ . '/../..' . '/includes/admin/watcher/class-watcher.php',
         'RankMath\\Admin_Bar_Menu' => __DIR__ . '/../..' . '/includes/admin/class-admin-bar-menu.php',
@@ -397,9 +400,9 @@ class ComposerStaticInit1aa411eedcc6ecfefe6cd2fb24f96cdc
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit1aa411eedcc6ecfefe6cd2fb24f96cdc::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit1aa411eedcc6ecfefe6cd2fb24f96cdc::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit1aa411eedcc6ecfefe6cd2fb24f96cdc::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit366105ca8fc758093b2a4a29dc439fd4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit366105ca8fc758093b2a4a29dc439fd4::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit366105ca8fc758093b2a4a29dc439fd4::$classMap;
 
         }, null, ClassLoader::class);
     }
