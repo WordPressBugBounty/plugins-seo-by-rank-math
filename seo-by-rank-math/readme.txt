@@ -5,7 +5,7 @@ Tags: seo, WordPress SEO, google search console, schema, redirection,
 Tested up to: 6.8
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0.251
+Stable tag: 1.0.251.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -348,5 +348,10 @@ Please drop us an email at support@rankmath.com, and we will be more than happy 
 - Fixed: Conflict with other plugins caused by the `.grid` class used in the Content AI CSS
 - Fixed: Missing file labels on the Theme Editor page
 - Fixed: UI issue in the Rank Math Overview Dashboard widget
+
+= 1.0.251.1 [Aug 18, 2025] =
+- Fixed: Plugin settings were not translated after the last update
+- Fixed: Backslashes added in the [htaccess](https://rankmath.com/kb/general-settings/#edit-htaccess) file were getting removed
+- Fixed: UI issues on the plugin settings page for RTL sites
 
 Full changelog can be found here - **[Rank Math changelog](https://rankmath.com/changelog/?utm_source=Plugin&utm_medium=Changelog&utm_campaign=WP)**
