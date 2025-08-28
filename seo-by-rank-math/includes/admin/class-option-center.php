@@ -384,6 +384,7 @@ class Option_Center implements Runner {
 			$notifications[] = $update_analytics;
 		}
 
+		do_action( 'rank_math/settings/before_save', $type, $settings );
 		foreach (
 			[
 				'htaccess_allow_editing',
@@ -391,14 +392,13 @@ class Option_Center implements Runner {
 				'searchConsole',
 				'analyticsData',
 				'analytics',
+				'usage_tracking',
 			] as $key
 		) {
 			if ( isset( $settings[ $key ] ) ) {
 				unset( $settings[ $key ] );
 			}
 		}
-
-		do_action( 'rank_math/settings/before_save', $type, $settings );
 
 		$settings = Sanitize_Settings::sanitize( $settings, $field_types );
 		self::check_updated_fields( $updated, $is_reset );
@@ -430,7 +430,7 @@ class Option_Center implements Runner {
 
 		return [
 			'notifications' => $notifications,
-			'settings'      => Helper::get_settings( $type ),
+			'settings'      => apply_filters( 'rank_math/settings/saved_data', Helper::get_settings( $type ), $type ),
 		];
 	}
 
