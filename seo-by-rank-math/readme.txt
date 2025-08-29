@@ -5,7 +5,7 @@ Tags: seo, WordPress SEO, google search console, schema, redirection,
 Tested up to: 6.8
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0.252
+Stable tag: 1.0.252.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -350,5 +350,8 @@ Please drop us an email at support@rankmath.com, and we will be more than happy 
 - Fixed: Localized data from the plugin was included in the REST output
 - Fixed: [Rewrite Titles](https://rankmath.com/kb/titles-and-meta/#rewrite-titles) option was always showing in Block themes even when not needed
 - Fixed: Incompatibility with LiteSpeed Cache plugin when Rewrite Titles option is enabled
+
+= 1.0.252.1 [Aug 29, 2025] =
+- Fixed: Incompatibility with the Inline CSS when the [Slack Enhanced Sharing option](https://rankmath.com/kb/titles-and-meta/#pages-slack-enhanced-sharing) is enabled
 
 Full changelog can be found here - **[Rank Math changelog](https://rankmath.com/changelog/?utm_source=Plugin&utm_medium=Changelog&utm_campaign=WP)**
