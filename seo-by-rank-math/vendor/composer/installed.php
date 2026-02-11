@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'rankmath/seo-by-rank-math',
-        'pretty_version' => 'v1.0.263',
-        'version' => '1.0.263.0',
-        'reference' => '7ed5c976838cdea781e5404864d74f193cf0eeeb',
+        'pretty_version' => 'v1.0.264',
+        'version' => '1.0.264.0',
+        'reference' => '6a74f20a7d1a684d42551308f6f9f42861c1501f',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'rankmath/seo-by-rank-math' => array(
-            'pretty_version' => 'v1.0.263',
-            'version' => '1.0.263.0',
-            'reference' => '7ed5c976838cdea781e5404864d74f193cf0eeeb',
+            'pretty_version' => 'v1.0.264',
+            'version' => '1.0.264.0',
+            'reference' => '6a74f20a7d1a684d42551308f6f9f42861c1501f',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
