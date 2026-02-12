@@ -5,7 +5,7 @@ Tags: seo, WordPress SEO, google search console, schema, redirection,
 Tested up to: 6.9
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0.264
+Stable tag: 1.0.264.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -345,5 +345,9 @@ Please drop us an email at support@rankmath.com, and we will be more than happy 
 - Fixed: Increased the Rank Math SEO metabox priority on taxonomy pages so it appears after custom fields
 - Fixed: Browser console warnings when the `SCRIPT_DEBUG` constant was set to `true`
 - Fixed: The `lastmod` value was missing in the [Sitemap](https://rankmath.com/kb/configure-sitemaps/) for the Posts Page selected in the Reading settings
+
+= 1.0.264.1 [Feb 12, 2026] =
+- Fixed: Missing [Add Property Group button in the Schema Generator](https://rankmath.com/kb/schema-generator/#num-1-5-add-property-and-property-group) after the last update.
+
 
 Full changelog can be found here - **[Rank Math changelog](https://rankmath.com/changelog/?utm_source=Plugin&utm_medium=Changelog&utm_campaign=WP)**
