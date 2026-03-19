@@ -5,7 +5,7 @@ Tags: seo, WordPress SEO, google search console, schema, redirection,
 Tested up to: 6.9
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0.266
+Stable tag: 1.0.266.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -347,5 +347,7 @@ Please drop us an email at support@rankmath.com, and we will be more than happy 
 - Fixed: Clicking on the Sitemap link in the [New Post type notice](https://rankmath.com/kb/new-post-type-detected/) was showing a blank page
 - Fixed: False error when updating the stock quantity of WooCommerce variations
 
+= 1.0.266.1 [Mar 19, 2026] =
+- Fixed: Publishing a new post in the Classic Editor incorrectly saved it as draft after the last update
 
 Full changelog can be found here - **[Rank Math changelog](https://rankmath.com/changelog/?utm_source=Plugin&utm_medium=Changelog&utm_campaign=WP)**
