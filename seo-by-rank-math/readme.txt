@@ -5,7 +5,7 @@ Tags: seo, google search console, schema, redirection, xml sitemap
 Tested up to: 7.0
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0.271
+Stable tag: 1.0.271.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -378,5 +378,10 @@ Terms of service: https://developers.facebook.com/terms/
 - Fixed UI issues in the [Schema Generator modal](https://rankmath.com/kb/schema-generator/).
 - Fixed accessibility issue in the [FAQ Schema block](https://rankmath.com/kb/faq-schema-block/) on some setups.
 - Fixed incorrect redirect issue with [Reconnect option in Analytics settings](https://rankmath.com/kb/general-settings/#test-connections).
+
+= 1.0.271.1 [May 28, 2026] =
+- Strengthened the security of the plugin. Thanks to [Patchstack](https://patchstack.com/) for revealing it responsibly
+- Fixed PHP error on REST endpoints in WordPress v6.8 after the last update.
+- Fixed an icon alignment issue on the [SEO Analysis page](https://rankmath.com/kb/seo-analysis/) in WordPress v7.0.
 
 Full changelog can be found here - **[Rank Math changelog](https://rankmath.com/changelog/?utm_source=Plugin&utm_medium=Changelog&utm_campaign=WP)**
