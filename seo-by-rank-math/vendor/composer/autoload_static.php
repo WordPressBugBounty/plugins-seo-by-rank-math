@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit53ce9afc4fde41331e9e540f4a08054c
+class ComposerStaticInit75e1b750d538f842a04adaa9d0cfd4d5
 {
     public static $files = array (
         'da5f6548f070d3d306f90eee42dd5de6' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgentParser.php',
@@ -20,6 +20,7 @@ class ComposerStaticInit53ce9afc4fde41331e9e540f4a08054c
         ),
         'W' => 
         array (
+            'WP\\MCP\\' => 7,
             'WPMedia\\Mixpanel\\' => 17,
         ),
     );
@@ -28,6 +29,10 @@ class ComposerStaticInit53ce9afc4fde41331e9e540f4a08054c
         'donatj\\UserAgent\\' => 
         array (
             0 => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgent',
+        ),
+        'WP\\MCP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes',
         ),
         'WPMedia\\Mixpanel\\' => 
         array (
@@ -38,6 +43,17 @@ class ComposerStaticInit53ce9afc4fde41331e9e540f4a08054c
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'RankMath\\ACF\\ACF' => __DIR__ . '/../..' . '/includes/modules/acf/class-acf.php',
+        'RankMath\\Abilities\\Abilities' => __DIR__ . '/../..' . '/includes/abilities/class-abilities.php',
+        'RankMath\\Abilities\\Ability_Interface' => __DIR__ . '/../..' . '/includes/abilities/interface-ability.php',
+        'RankMath\\Abilities\\SEO_Analysis\\Audit_Result' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-audit-result.php',
+        'RankMath\\Abilities\\SEO_Analysis\\Audit_Runner' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-audit-runner.php',
+        'RankMath\\Abilities\\SEO_Analysis\\Audit_Site_SEO' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-audit-site-seo.php',
+        'RankMath\\Abilities\\SEO_Analysis\\Finding' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-finding.php',
+        'RankMath\\Abilities\\SEO_Analysis\\Fix_Hint_Map' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-fix-hint-map.php',
+        'RankMath\\Abilities\\SEO_Analysis\\Fix_Runner' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-fix-runner.php',
+        'RankMath\\Abilities\\SEO_Analysis\\Fix_Site_SEO' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-fix-site-seo.php',
+        'RankMath\\Abilities\\SEO_Analysis\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-subscriber.php',
+        'RankMath\\Abilities\\Subscriber_Interface' => __DIR__ . '/../..' . '/includes/abilities/interface-subscriber.php',
         'RankMath\\Admin\\Admin' => __DIR__ . '/../..' . '/includes/admin/class-admin.php',
         'RankMath\\Admin\\Admin_Breadcrumbs' => __DIR__ . '/../..' . '/includes/admin/class-admin-breadcrumbs.php',
         'RankMath\\Admin\\Admin_Dashboard_Nav' => __DIR__ . '/../..' . '/includes/admin/class-admin-dashboard-nav.php',
@@ -383,6 +399,59 @@ class ComposerStaticInit53ce9afc4fde41331e9e540f4a08054c
         'WPMedia_Producers_MixpanelEvents' => __DIR__ . '/..' . '/wp-media/wp-mixpanel/src/Classes/Producers/MixpanelEvents.php',
         'WPMedia_Producers_MixpanelGroups' => __DIR__ . '/..' . '/wp-media/wp-mixpanel/src/Classes/Producers/MixpanelGroups.php',
         'WPMedia_Producers_MixpanelPeople' => __DIR__ . '/..' . '/wp-media/wp-mixpanel/src/Classes/Producers/MixpanelPeople.php',
+        'WP\\MCP\\Abilities\\DiscoverAbilitiesAbility' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Abilities/DiscoverAbilitiesAbility.php',
+        'WP\\MCP\\Abilities\\ExecuteAbilityAbility' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Abilities/ExecuteAbilityAbility.php',
+        'WP\\MCP\\Abilities\\GetAbilityInfoAbility' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Abilities/GetAbilityInfoAbility.php',
+        'WP\\MCP\\Abilities\\McpAbilityHelperTrait' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Abilities/McpAbilityHelperTrait.php',
+        'WP\\MCP\\Autoloader' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Autoloader.php',
+        'WP\\MCP\\Cli\\McpCommand' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Cli/McpCommand.php',
+        'WP\\MCP\\Cli\\StdioServerBridge' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Cli/StdioServerBridge.php',
+        'WP\\MCP\\Core\\McpAdapter' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Core/McpAdapter.php',
+        'WP\\MCP\\Core\\McpComponentRegistry' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Core/McpComponentRegistry.php',
+        'WP\\MCP\\Core\\McpServer' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Core/McpServer.php',
+        'WP\\MCP\\Core\\McpTransportFactory' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Core/McpTransportFactory.php',
+        'WP\\MCP\\Domain\\Prompts\\Contracts\\McpPromptBuilderInterface' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Prompts/Contracts/McpPromptBuilderInterface.php',
+        'WP\\MCP\\Domain\\Prompts\\McpPrompt' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Prompts/McpPrompt.php',
+        'WP\\MCP\\Domain\\Prompts\\McpPromptBuilder' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Prompts/McpPromptBuilder.php',
+        'WP\\MCP\\Domain\\Prompts\\McpPromptValidator' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Prompts/McpPromptValidator.php',
+        'WP\\MCP\\Domain\\Prompts\\RegisterAbilityAsMcpPrompt' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Prompts/RegisterAbilityAsMcpPrompt.php',
+        'WP\\MCP\\Domain\\Resources\\McpResource' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Resources/McpResource.php',
+        'WP\\MCP\\Domain\\Resources\\McpResourceValidator' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Resources/McpResourceValidator.php',
+        'WP\\MCP\\Domain\\Resources\\RegisterAbilityAsMcpResource' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Resources/RegisterAbilityAsMcpResource.php',
+        'WP\\MCP\\Domain\\Tools\\McpTool' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Tools/McpTool.php',
+        'WP\\MCP\\Domain\\Tools\\McpToolValidator' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Tools/McpToolValidator.php',
+        'WP\\MCP\\Domain\\Tools\\RegisterAbilityAsMcpTool' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Tools/RegisterAbilityAsMcpTool.php',
+        'WP\\MCP\\Domain\\Utils\\McpAnnotationMapper' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Utils/McpAnnotationMapper.php',
+        'WP\\MCP\\Domain\\Utils\\McpValidator' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Utils/McpValidator.php',
+        'WP\\MCP\\Domain\\Utils\\SchemaTransformer' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Domain/Utils/SchemaTransformer.php',
+        'WP\\MCP\\Handlers\\HandlerHelperTrait' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Handlers/HandlerHelperTrait.php',
+        'WP\\MCP\\Handlers\\Initialize\\InitializeHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Handlers/Initialize/InitializeHandler.php',
+        'WP\\MCP\\Handlers\\Prompts\\PromptsHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Handlers/Prompts/PromptsHandler.php',
+        'WP\\MCP\\Handlers\\Resources\\ResourcesHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Handlers/Resources/ResourcesHandler.php',
+        'WP\\MCP\\Handlers\\System\\SystemHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Handlers/System/SystemHandler.php',
+        'WP\\MCP\\Handlers\\Tools\\ToolsHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Handlers/Tools/ToolsHandler.php',
+        'WP\\MCP\\Infrastructure\\ErrorHandling\\Contracts\\McpErrorHandlerInterface' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Infrastructure/ErrorHandling/Contracts/McpErrorHandlerInterface.php',
+        'WP\\MCP\\Infrastructure\\ErrorHandling\\ErrorLogMcpErrorHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Infrastructure/ErrorHandling/ErrorLogMcpErrorHandler.php',
+        'WP\\MCP\\Infrastructure\\ErrorHandling\\McpErrorFactory' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Infrastructure/ErrorHandling/McpErrorFactory.php',
+        'WP\\MCP\\Infrastructure\\ErrorHandling\\NullMcpErrorHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Infrastructure/ErrorHandling/NullMcpErrorHandler.php',
+        'WP\\MCP\\Infrastructure\\Observability\\ConsoleObservabilityHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Infrastructure/Observability/ConsoleObservabilityHandler.php',
+        'WP\\MCP\\Infrastructure\\Observability\\Contracts\\McpObservabilityHandlerInterface' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Infrastructure/Observability/Contracts/McpObservabilityHandlerInterface.php',
+        'WP\\MCP\\Infrastructure\\Observability\\ErrorLogMcpObservabilityHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Infrastructure/Observability/ErrorLogMcpObservabilityHandler.php',
+        'WP\\MCP\\Infrastructure\\Observability\\McpObservabilityHelperTrait' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Infrastructure/Observability/McpObservabilityHelperTrait.php',
+        'WP\\MCP\\Infrastructure\\Observability\\NullMcpObservabilityHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Infrastructure/Observability/NullMcpObservabilityHandler.php',
+        'WP\\MCP\\Plugin' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Plugin.php',
+        'WP\\MCP\\Servers\\DefaultServerFactory' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Servers/DefaultServerFactory.php',
+        'WP\\MCP\\Transport\\Contracts\\McpRestTransportInterface' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Contracts/McpRestTransportInterface.php',
+        'WP\\MCP\\Transport\\Contracts\\McpTransportInterface' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Contracts/McpTransportInterface.php',
+        'WP\\MCP\\Transport\\HttpTransport' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/HttpTransport.php',
+        'WP\\MCP\\Transport\\Infrastructure\\HttpRequestContext' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Infrastructure/HttpRequestContext.php',
+        'WP\\MCP\\Transport\\Infrastructure\\HttpRequestHandler' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Infrastructure/HttpRequestHandler.php',
+        'WP\\MCP\\Transport\\Infrastructure\\HttpSessionValidator' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Infrastructure/HttpSessionValidator.php',
+        'WP\\MCP\\Transport\\Infrastructure\\JsonRpcResponseBuilder' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Infrastructure/JsonRpcResponseBuilder.php',
+        'WP\\MCP\\Transport\\Infrastructure\\McpTransportContext' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Infrastructure/McpTransportContext.php',
+        'WP\\MCP\\Transport\\Infrastructure\\McpTransportHelperTrait' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Infrastructure/McpTransportHelperTrait.php',
+        'WP\\MCP\\Transport\\Infrastructure\\RequestRouter' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Infrastructure/RequestRouter.php',
+        'WP\\MCP\\Transport\\Infrastructure\\SessionManager' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Infrastructure/SessionManager.php',
         'WP_Async_Request' => __DIR__ . '/..' . '/a5hleyrich/wp-background-processing/classes/wp-async-request.php',
         'WP_Background_Process' => __DIR__ . '/..' . '/a5hleyrich/wp-background-processing/classes/wp-background-process.php',
         'donatj\\UserAgent\\Browsers' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgent/Browsers.php',
@@ -395,9 +464,9 @@ class ComposerStaticInit53ce9afc4fde41331e9e540f4a08054c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit53ce9afc4fde41331e9e540f4a08054c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit53ce9afc4fde41331e9e540f4a08054c::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit53ce9afc4fde41331e9e540f4a08054c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit75e1b750d538f842a04adaa9d0cfd4d5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit75e1b750d538f842a04adaa9d0cfd4d5::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit75e1b750d538f842a04adaa9d0cfd4d5::$classMap;
 
         }, null, ClassLoader::class);
     }
