@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit42ab6d5f0db1f3d169a779a8e40b5c81
+class ComposerStaticInit9fa36d06493cf4684d019c0a64247e68
 {
     public static $files = array (
         'da5f6548f070d3d306f90eee42dd5de6' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgentParser.php',
@@ -45,6 +45,13 @@ class ComposerStaticInit42ab6d5f0db1f3d169a779a8e40b5c81
         'RankMath\\ACF\\ACF' => __DIR__ . '/../..' . '/includes/modules/acf/class-acf.php',
         'RankMath\\Abilities\\Abilities' => __DIR__ . '/../..' . '/includes/abilities/class-abilities.php',
         'RankMath\\Abilities\\Ability_Interface' => __DIR__ . '/../..' . '/includes/abilities/interface-ability.php',
+        'RankMath\\Abilities\\Link_Genius\\Get_Link_Report' => __DIR__ . '/../..' . '/includes/abilities/link-genius/class-get-link-report.php',
+        'RankMath\\Abilities\\Link_Genius\\Get_Post_Links' => __DIR__ . '/../..' . '/includes/abilities/link-genius/class-get-post-links.php',
+        'RankMath\\Abilities\\Link_Genius\\Link_Report_Runner' => __DIR__ . '/../..' . '/includes/abilities/link-genius/class-link-report-runner.php',
+        'RankMath\\Abilities\\Link_Genius\\Post_Links_Runner' => __DIR__ . '/../..' . '/includes/abilities/link-genius/class-post-links-runner.php',
+        'RankMath\\Abilities\\Link_Genius\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/link-genius/class-subscriber.php',
+        'RankMath\\Abilities\\Post_SEO\\Get_Post_SEO_Meta' => __DIR__ . '/../..' . '/includes/abilities/post-seo/class-get-post-seo-meta.php',
+        'RankMath\\Abilities\\Post_SEO\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/post-seo/class-subscriber.php',
         'RankMath\\Abilities\\SEO_Analysis\\Audit_Result' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-audit-result.php',
         'RankMath\\Abilities\\SEO_Analysis\\Audit_Runner' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-audit-runner.php',
         'RankMath\\Abilities\\SEO_Analysis\\Audit_Site_SEO' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-audit-site-seo.php',
@@ -53,6 +60,8 @@ class ComposerStaticInit42ab6d5f0db1f3d169a779a8e40b5c81
         'RankMath\\Abilities\\SEO_Analysis\\Fix_Runner' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-fix-runner.php',
         'RankMath\\Abilities\\SEO_Analysis\\Fix_Site_SEO' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-fix-site-seo.php',
         'RankMath\\Abilities\\SEO_Analysis\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/seo-analysis/class-subscriber.php',
+        'RankMath\\Abilities\\Schema\\Get_Post_Schema' => __DIR__ . '/../..' . '/includes/abilities/schema/class-get-post-schema.php',
+        'RankMath\\Abilities\\Schema\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/schema/class-subscriber.php',
         'RankMath\\Abilities\\Subscriber_Interface' => __DIR__ . '/../..' . '/includes/abilities/interface-subscriber.php',
         'RankMath\\Admin\\Admin' => __DIR__ . '/../..' . '/includes/admin/class-admin.php',
         'RankMath\\Admin\\Admin_Breadcrumbs' => __DIR__ . '/../..' . '/includes/admin/class-admin-breadcrumbs.php',
@@ -464,9 +473,9 @@ class ComposerStaticInit42ab6d5f0db1f3d169a779a8e40b5c81
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit42ab6d5f0db1f3d169a779a8e40b5c81::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit42ab6d5f0db1f3d169a779a8e40b5c81::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit42ab6d5f0db1f3d169a779a8e40b5c81::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit9fa36d06493cf4684d019c0a64247e68::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit9fa36d06493cf4684d019c0a64247e68::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit9fa36d06493cf4684d019c0a64247e68::$classMap;
 
         }, null, ClassLoader::class);
     }
