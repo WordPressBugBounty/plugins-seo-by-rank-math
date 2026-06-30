@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9fa36d06493cf4684d019c0a64247e68
+class ComposerStaticInitc44c881a49042a2b69184cda4e913269
 {
     public static $files = array (
         'da5f6548f070d3d306f90eee42dd5de6' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgentParser.php',
@@ -43,6 +43,18 @@ class ComposerStaticInit9fa36d06493cf4684d019c0a64247e68
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'RankMath\\ACF\\ACF' => __DIR__ . '/../..' . '/includes/modules/acf/class-acf.php',
+        'RankMath\\AI_Visibility\\AI_Visibility' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/class-ai-visibility.php',
+        'RankMath\\AI_Visibility\\Admin' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/Admin/class-admin.php',
+        'RankMath\\AI_Visibility\\Api\\Base_Controller' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/Api/class-base-controller.php',
+        'RankMath\\AI_Visibility\\Api\\Brands_Controller' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/Api/class-brands-controller.php',
+        'RankMath\\AI_Visibility\\Api\\Checkout_Controller' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/Api/class-checkout-controller.php',
+        'RankMath\\AI_Visibility\\Api\\Trial_Controller' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/Api/class-trial-controller.php',
+        'RankMath\\AI_Visibility\\Cache' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/class-cache.php',
+        'RankMath\\Abilities\\AI_Visibility\\Create_AI_Visibility_Brand' => __DIR__ . '/../..' . '/includes/abilities/ai-visibility/class-create-ai-visibility-brand.php',
+        'RankMath\\Abilities\\AI_Visibility\\Get_AI_Visibility_Brand_Insights' => __DIR__ . '/../..' . '/includes/abilities/ai-visibility/class-get-ai-visibility-brand-insights.php',
+        'RankMath\\Abilities\\AI_Visibility\\Get_AI_Visibility_Brand_Queries' => __DIR__ . '/../..' . '/includes/abilities/ai-visibility/class-get-ai-visibility-brand-queries.php',
+        'RankMath\\Abilities\\AI_Visibility\\Get_AI_Visibility_Overview' => __DIR__ . '/../..' . '/includes/abilities/ai-visibility/class-get-ai-visibility-overview.php',
+        'RankMath\\Abilities\\AI_Visibility\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/ai-visibility/class-subscriber.php',
         'RankMath\\Abilities\\Abilities' => __DIR__ . '/../..' . '/includes/abilities/class-abilities.php',
         'RankMath\\Abilities\\Ability_Interface' => __DIR__ . '/../..' . '/includes/abilities/interface-ability.php',
         'RankMath\\Abilities\\Link_Genius\\Get_Link_Report' => __DIR__ . '/../..' . '/includes/abilities/link-genius/class-get-link-report.php',
@@ -463,6 +475,7 @@ class ComposerStaticInit9fa36d06493cf4684d019c0a64247e68
         'WP\\MCP\\Transport\\Infrastructure\\SessionManager' => __DIR__ . '/..' . '/wordpress/mcp-adapter/includes/Transport/Infrastructure/SessionManager.php',
         'WP_Async_Request' => __DIR__ . '/..' . '/a5hleyrich/wp-background-processing/classes/wp-async-request.php',
         'WP_Background_Process' => __DIR__ . '/..' . '/a5hleyrich/wp-background-processing/classes/wp-background-process.php',
+        'donatj\\UserAgent\\Bots' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgent/Bots.php',
         'donatj\\UserAgent\\Browsers' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgent/Browsers.php',
         'donatj\\UserAgent\\Platforms' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgent/Platforms.php',
         'donatj\\UserAgent\\UserAgent' => __DIR__ . '/..' . '/donatj/phpuseragentparser/src/UserAgent/UserAgent.php',
@@ -473,9 +486,9 @@ class ComposerStaticInit9fa36d06493cf4684d019c0a64247e68
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9fa36d06493cf4684d019c0a64247e68::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9fa36d06493cf4684d019c0a64247e68::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit9fa36d06493cf4684d019c0a64247e68::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitc44c881a49042a2b69184cda4e913269::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitc44c881a49042a2b69184cda4e913269::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitc44c881a49042a2b69184cda4e913269::$classMap;
 
         }, null, ClassLoader::class);
     }
