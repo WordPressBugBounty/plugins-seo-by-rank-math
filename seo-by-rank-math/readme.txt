@@ -5,7 +5,7 @@ Tags: seo, google search console, schema, redirection, xml sitemap
 Tested up to: 7.0
 Requires at least: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.274
+Stable tag: 1.0.274.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -387,6 +387,9 @@ Terms of service: https://developers.facebook.com/terms/
 - Fixed Classic revisions editor that was appearing inside the Block Editor when Rank Math was active.
 - Fixed [Content AI](https://rankmath.com/kb/how-to-use-content-ai/) media file suggestions that were incorrect on top-level pages.
 - Fixed [Redirections](https://rankmath.com/kb/setting-up-redirections/) query parameters that were not merging correctly when appended to the destination URL.
+
+= 1.0.274.1 [Jul 15, 2026] =
+- Fixed a fatal error that occurred when editing a post using [Divi's Front-end/Visual Builder](https://rankmath.com/blog/divi-seo/).
 
 
 Full changelog can be found here - **[Rank Math changelog](https://rankmath.com/changelog/?utm_source=Plugin&utm_medium=Changelog&utm_campaign=WP)**
