@@ -2,10 +2,10 @@
 Contributors: rankmath
 Plugin link: https://rankmath.com/?utm_source=LP&utm_campaign=WP
 Tags: seo, google search console, schema, redirection, xml sitemap
-Tested up to: 7.0
+Tested up to: 7.1
 Requires at least: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.277
+Stable tag: 1.0.277.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -415,6 +415,10 @@ Terms of service: https://developers.facebook.com/terms/
 - Fixed local business Schema `openingHours` property outputting full day names instead of the required two-letter abbreviation.
 - Fixed the link options search input and results layout being distorted in the Classic Editor.
 - Strengthened the security of the plugin. Thanks to Patchstack, Project Black, Mohammed Abd Alrahman, and Usama Arshad for revealing it responsibly.
+
+= 1.0.277.1 [Aug 27, 2026] =
+- Updated: Rank Math SEO is now tested up to WordPress 7.1
+- Fixed the [Help & Support AI Assistant](https://rankmath.com/kb/support-agent/) incorrectly showing an HTTPS-required notice on every admin page, even on HTTPS sites when Application Passwords were disabled by another plugin.
 
 
 Full changelog can be found here - **[Rank Math changelog](https://rankmath.com/changelog/?utm_source=Plugin&utm_medium=Changelog&utm_campaign=WP)**

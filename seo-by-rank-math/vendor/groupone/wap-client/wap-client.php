@@ -3,7 +3,7 @@
  * Plugin Name:       WAP Client
  * Plugin URI:        https://github.com/group-one/wap-client
  * Description:       WordPress AI Platform (WAP) client library. Integrates the WAP AI chat assistant into any WordPress plugin via a single static method call.
- * Version:           2.2.1
+ * Version:           2.2.2
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Group.one
@@ -48,7 +48,6 @@ if (file_exists(__DIR__ . '/vendor/autoload.php')) {
     });
 }
 
-use GroupOne\WapClient\AppPasswordManager;
 use GroupOne\WapClient\ChatColumn;
 use GroupOne\WapClient\ChatEmbed;
 use GroupOne\WapClient\ChatWidget;
@@ -139,26 +138,6 @@ function wap_client_boot(): void {
 
     // AJAX: docked-column state, persisted per user.
     add_action('wp_ajax_wap_client_column_state', ['GroupOne\\WapClient\\ChatColumn', 'ajax_state']);
-
-    // Admin notice when Application Passwords are unavailable (non-HTTPS).
-    add_action('admin_notices', 'wap_client_maybe_show_https_notice');
-}
-
-/**
- * Show an admin notice when WordPress Application Passwords are disabled.
- *
- * Application Passwords require HTTPS. On non-HTTPS sites WordPress disables
- * them entirely. We surface a clear, non-blocking notice explaining this.
- */
-function wap_client_maybe_show_https_notice(): void {
-    if (!AppPasswordManager::are_app_passwords_available()) {
-        $message = sprintf(
-            /* translators: 1: documentation URL */
-            __('<strong>WAP AI Assistant</strong> requires HTTPS to use WordPress Application Passwords. The AI chat widget will be hidden until this site is served over HTTPS. <a href="%s" target="_blank" rel="noopener noreferrer">Learn more</a>.', 'wap-client'),
-            'https://make.wordpress.org/core/2020/11/05/application-passwords-integration-guide/'
-        );
-        printf('<div class="notice notice-warning"><p>%s</p></div>', wp_kses_post($message));
-    }
 }
 
 // ---------------------------------------------------------------------------
@@ -316,12 +295,11 @@ final class WapClient
      */
     public static function register_chat_page(array $args): void
     {
-        // Application Passwords must be available (requires HTTPS or WAP_CLIENT_DEV_MODE).
-        // Do not register on non-HTTPS sites — the AJAX auth flow will fail anyway.
-        if (!AppPasswordManager::are_app_passwords_available()) {
-            return;
-        }
-
+        // Registered unconditionally, even when Application Passwords are
+        // unavailable (no HTTPS, or disabled by another plugin) — the page
+        // itself is where that reason is explained via a contextual notice
+        // in place of the widget, rather than the page silently disappearing.
+        //
         // ChatWidget::register() queues an admin_menu hook that checks current_user_can()
         // at render time, so this method is safe to call at plugins_loaded before the
         // user session is authenticated.
@@ -368,10 +346,7 @@ final class WapClient
      */
     public static function register_chat_column(array $args): void
     {
-        if (!AppPasswordManager::are_app_passwords_available()) {
-            return;
-        }
-
+        // Registered unconditionally — see register_chat_page() for why.
         ChatColumn::register($args);
     }
 
@@ -435,10 +410,7 @@ final class WapClient
      */
     public static function register_chat_embed(array $args): void
     {
-        if (!AppPasswordManager::are_app_passwords_available()) {
-            return;
-        }
-
+        // Registered unconditionally — see register_chat_page() for why.
         ChatEmbed::register($args);
     }
 

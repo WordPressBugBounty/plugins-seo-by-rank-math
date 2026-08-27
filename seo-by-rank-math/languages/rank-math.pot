@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Rank Math SEO 1.0.277\n"
+"Project-Id-Version: Rank Math SEO 1.0.277.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/seo-by-rank-math\n"
 "Last-Translator: Rank Math <support@rankmath.com>\n"
 "Language-Team: Rank Math <support@rankmath.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-26T10:16:16+00:00\n"
+"POT-Creation-Date: 2026-08-27T09:45:21+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: seo-by-rank-math\n"
@@ -2757,6 +2757,22 @@ msgid "Connect Now"
 msgstr ""
 
 msgid "Takes less than 30 seconds to get started"
+msgstr ""
+
+msgid "This AI Assistant requires HTTPS to use WordPress Application Passwords. It will be available once this site is served over HTTPS."
+msgstr ""
+
+msgid "This AI Assistant is unavailable because WordPress Application Passwords have been disabled on this site — for example, by a security plugin. Enable Application Passwords to use the AI Assistant."
+msgstr ""
+
+msgid "AI Assistant Unavailable"
+msgstr ""
+
+msgid "Unavailable"
+msgstr ""
+
+#. translators: %s: Rank Math Knowledge Base URL
+msgid "Need help? Visit our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Knowledge Base</a> for support."
 msgstr ""
 
 msgid "No authenticated WordPress user."

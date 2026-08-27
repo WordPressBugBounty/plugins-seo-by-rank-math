@@ -144,11 +144,17 @@ class Support_Agent {
 	}
 
 	/**
-	 * Render the page body: chat widget, or the Connect CTA when not connected.
+	 * Render the page body: chat widget, the Connect CTA when not connected, or
+	 * the Unavailable card when WordPress Application Passwords can't be used.
 	 *
 	 * @param array $config Credential-free page config from ChatWidget.
 	 */
 	public function render_page( $config ) {
+		if ( ! \GroupOne\WapClient\AppPasswordManager::are_app_passwords_available() ) {
+			$this->render_unavailable_cta();
+			return;
+		}
+
 		if ( Helper::is_site_connected() ) {
 			ChatWidget::render_chat_root( $config['menu_slug'] );
 			return;

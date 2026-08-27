@@ -437,6 +437,10 @@ class ChatWidget
      * $root_id defaults to the historical `wap-chat-root`. A second surface on
      * the same screen MUST pass its own id.
      *
+     * When Application Passwords are unavailable, this renders a contextual
+     * notice instead of the mount point — scoped to this surface only, rather
+     * than a global admin_notices banner every screen would show.
+     *
      * @param string $menu_slug The menu slug identifying which page to render.
      * @param string $root_id   DOM id for the mount point.
      *
@@ -446,6 +450,11 @@ class ChatWidget
     {
         $page = self::$pages[$menu_slug] ?? null;
         if (!$page) {
+            return;
+        }
+
+        if (!AppPasswordManager::are_app_passwords_available()) {
+            self::render_unavailable_notice();
             return;
         }
 
@@ -463,6 +472,32 @@ class ChatWidget
             </div>
         </div>
         <?php
+    }
+
+    /**
+     * Render the Application-Passwords-unavailable notice in place of the
+     * widget mount point.
+     *
+     * Distinguishes the two causes so the message names the actual one: HTTPS
+     * not being enabled, versus Application Passwords having been disabled
+     * outright (e.g. by a security plugin) via the filterable
+     * `wp_is_application_passwords_available` — which is independent of SSL.
+     *
+     * @return void
+     */
+    private static function render_unavailable_notice(): void
+    {
+        if (AppPasswordManager::is_https_missing()) {
+            $message = sprintf(
+                /* translators: 1: documentation URL */
+                __('This AI assistant requires HTTPS to use WordPress Application Passwords. It will be available once this site is served over HTTPS. <a href="%s" target="_blank" rel="noopener noreferrer">Learn more</a>.', 'wap-client'),
+                'https://make.wordpress.org/core/2020/11/05/application-passwords-integration-guide/'
+            );
+        } else {
+            $message = __('This AI assistant is unavailable because WordPress Application Passwords have been disabled on this site. Enable Application Passwords to use the AI Assistant.', 'wap-client');
+        }
+
+        printf('<div class="notice notice-warning inline wap-client-unavailable-notice"><p>%s</p></div>', wp_kses_post($message));
     }
 
     /**

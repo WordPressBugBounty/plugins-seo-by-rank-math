@@ -64,6 +64,28 @@ class AppPasswordManager
         return is_ssl();
     }
 
+    /**
+     * Whether HTTPS is the (or a) reason Application Passwords are unavailable.
+     *
+     * `wp_is_application_passwords_available()` is filterable, so a plugin
+     * (e.g. a security plugin) can disable Application Passwords outright,
+     * independent of the site's SSL status. Callers use this to distinguish
+     * that case from a genuine "this site is not on HTTPS" case, so the
+     * message shown to the user names the actual cause.
+     *
+     * @return bool True when the site is not on HTTPS (and the dev bypass is
+     *              not active) — regardless of whether some other factor also
+     *              disables Application Passwords.
+     */
+    public static function is_https_missing(): bool
+    {
+        if (defined('WAP_CLIENT_DEV_MODE') && WAP_CLIENT_DEV_MODE) {
+            return false;
+        }
+
+        return !is_ssl();
+    }
+
     // -------------------------------------------------------------------------
     // Public API
     // -------------------------------------------------------------------------

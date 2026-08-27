@@ -191,23 +191,23 @@
         },
         {
             "name": "groupone/wap-client",
-            "version": "2.2.1",
-            "version_normalized": "2.2.1.0",
+            "version": "2.2.2",
+            "version_normalized": "2.2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/One-com/wap-client.git",
-                "reference": "e8511428d5661fc3101e681a3eb6a5bcd0272a17"
+                "reference": "c6e817e206fbaf7224f0150d52969a1bd3cd22f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/One-com/wap-client/zipball/e8511428d5661fc3101e681a3eb6a5bcd0272a17",
-                "reference": "e8511428d5661fc3101e681a3eb6a5bcd0272a17",
+                "url": "https://api.github.com/repos/One-com/wap-client/zipball/c6e817e206fbaf7224f0150d52969a1bd3cd22f5",
+                "reference": "c6e817e206fbaf7224f0150d52969a1bd3cd22f5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.4"
             },
-            "time": "2026-08-14T10:13:33+00:00",
+            "time": "2026-08-27T08:27:41+00:00",
             "type": "wordpress-plugin",
             "installation-source": "dist",
             "autoload": {
