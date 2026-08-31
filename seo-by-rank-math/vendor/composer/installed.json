@@ -190,60 +190,6 @@
             "install-path": "../donatj/phpuseragentparser"
         },
         {
-            "name": "groupone/wap-client",
-            "version": "2.2.2",
-            "version_normalized": "2.2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/One-com/wap-client.git",
-                "reference": "c6e817e206fbaf7224f0150d52969a1bd3cd22f5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/One-com/wap-client/zipball/c6e817e206fbaf7224f0150d52969a1bd3cd22f5",
-                "reference": "c6e817e206fbaf7224f0150d52969a1bd3cd22f5",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.4"
-            },
-            "time": "2026-08-27T08:27:41+00:00",
-            "type": "wordpress-plugin",
-            "installation-source": "dist",
-            "autoload": {
-                "files": [
-                    "wap-client.php"
-                ],
-                "psr-4": {
-                    "GroupOne\\WapClient\\": "includes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "group.one",
-                    "homepage": "https://www.group.one"
-                }
-            ],
-            "description": "WordPress AI Platform (WAP) client library — drop-in Composer package for integrating AI chat into any WordPress plugin.",
-            "homepage": "https://github.com/One-com/wap-client",
-            "keywords": [
-                "ai",
-                "chat",
-                "group-one",
-                "wap",
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/One-com/wap-client/issues",
-                "source": "https://github.com/One-com/wap-client"
-            },
-            "install-path": "../groupone/wap-client"
-        },
-        {
             "name": "woocommerce/action-scheduler",
             "version": "3.9.3",
             "version_normalized": "3.9.3.0",
@@ -291,24 +237,27 @@
         },
         {
             "name": "wordpress/mcp-adapter",
-            "version": "v0.4.1",
-            "version_normalized": "0.4.1.0",
+            "version": "v0.5.0",
+            "version_normalized": "0.5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/mcp-adapter.git",
-                "reference": "1a0f9ab868e34b4375be42e873f60765e6632505"
+                "reference": "7bfc49f46b3ea7544dded49d5a606089f825a80b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/mcp-adapter/zipball/1a0f9ab868e34b4375be42e873f60765e6632505",
-                "reference": "1a0f9ab868e34b4375be42e873f60765e6632505",
+                "url": "https://api.github.com/repos/WordPress/mcp-adapter/zipball/7bfc49f46b3ea7544dded49d5a606089f825a80b",
+                "reference": "7bfc49f46b3ea7544dded49d5a606089f825a80b",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0"
+                "ext-json": "*",
+                "php": "^7.4 || ^8.0",
+                "wordpress/php-mcp-schema": "^0.1.0"
             },
             "require-dev": {
                 "automattic/vipwpcs": "^3.0",
+                "php-stubs/wordpress-stubs": "^6.9",
                 "php-stubs/wp-cli-stubs": "^2.12",
                 "phpcompatibility/php-compatibility": "10.x-dev as 9.99.99",
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
@@ -323,8 +272,8 @@
                 "wpackagist-plugin/plugin-check": "^1.6",
                 "yoast/phpunit-polyfills": "^4.0"
             },
-            "time": "2025-12-09T06:56:51+00:00",
-            "type": "library",
+            "time": "2026-04-14T12:12:58+00:00",
+            "type": "wordpress-plugin",
             "extra": {
                 "installer-paths": {
                     "vendor/{$vendor}/{$name}/": [
@@ -365,6 +314,56 @@
                 "source": "https://github.com/wordpress/mcp-adapter"
             },
             "install-path": "../wordpress/mcp-adapter"
+        },
+        {
+            "name": "wordpress/php-mcp-schema",
+            "version": "v0.1.3",
+            "version_normalized": "0.1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WordPress/php-mcp-schema",
+                "reference": "b2fcf97aa023ce46e9f03493c194a72d5a46bea2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WordPress/php-mcp-schema/zipball/b2fcf97aa023ce46e9f03493c194a72d5a46bea2",
+                "reference": "b2fcf97aa023ce46e9f03493c194a72d5a46bea2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10"
+            },
+            "time": "2026-08-10T09:12:14+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "WP\\McpSchema\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress",
+                    "homepage": "https://wordpress.org"
+                }
+            ],
+            "description": "PHP DTOs for the Model Context Protocol (MCP) specification",
+            "homepage": "https://github.com/WordPress/php-mcp-schema",
+            "keywords": [
+                "dto",
+                "mcp",
+                "model-context-protocol",
+                "php",
+                "schema"
+            ],
+            "install-path": "../wordpress/php-mcp-schema"
         },
         {
             "name": "wp-media/wp-mixpanel",
