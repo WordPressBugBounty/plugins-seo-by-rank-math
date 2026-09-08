@@ -5,7 +5,7 @@ Tags: seo, google search console, schema, redirection, xml sitemap
 Tested up to: 7.1
 Requires at least: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.277.2
+Stable tag: 1.0.278
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -407,21 +407,14 @@ Terms of service: https://developers.facebook.com/terms/
 
 == Changelog ==
 
-= 1.0.277 [Aug 26, 2026] =
-- [HUGE!] Added a [Support Agent](https://rankmath.com/kb/support-agent/) that answers support questions anytime, directly from the plugin.
-- Added abilities for [AI assistants to configure Rank Math's settings](https://rankmath.com/kb/set-up-rank-math-using-mcp/).
-- [Added a filter](https://rankmath.com/kb/filters-hooks-api-developer/#change-post-description-llms.txt) to use the SEO description instead of the post excerpt in [llms.txt](https://rankmath.com/kb/llms-txt/).
-- Fixed Import Redirection Plugin Data via Setup Wizard failing on the first attempt.
-- Fixed local business Schema `openingHours` property outputting full day names instead of the required two-letter abbreviation.
-- Fixed the link options search input and results layout being distorted in the Classic Editor.
-- Strengthened the security of the plugin. Thanks to Patchstack, Project Black, Mohammed Abd Alrahman, and Usama Arshad for revealing it responsibly.
-
-= 1.0.277.1 [Aug 27, 2026] =
-- Updated: Rank Math SEO is now tested up to WordPress 7.1
-- Fixed the [Help & Support AI Assistant](https://rankmath.com/kb/support-agent/) incorrectly showing an HTTPS-required notice on every admin page, even on HTTPS sites when Application Passwords were disabled by another plugin.
-
-= 1.0.277.2 [Aug 31, 2026] =
-- Temporarily paused the Support Agent introduced in 1.0.277 while we add further transparency to how it requests site access. [Details here](https://rankmath.com/kb/support-agent-paused-temporarily/)
+= 1.0.278 [Sep 08, 2026] =
+- Added [HUGE!] MCP Tools now allow users to [connect with AI assistants through OAuth](https://rankmath.com/kb/connect-rank-math-mcp-with-claude-desktop/).
+- Added new [MCP Tools](https://rankmath.com/kb/mcp-tools/) to fetch Redirections, Robots.txt, and LLMs.txt data.
+- Added Content AI support to pre-fill the Focus Keyword field using the keywords already added to the post.
+- Fixed the Post/Page editor incorrectly showing "Review 1 change" with a save prompt on every load when using block themes.
+- Fixed the [Recalculate SEO Score option](https://rankmath.com/kb/seo-score-not-available/#import-data) showing in Redirections & Schema plugin importers, where it does not apply.
+- Fixed [404 Monitor](https://rankmath.com/kb/monitor-404-errors/) exclude paths losing their comparison key when multiple paths were saved at once.
+- Fixed a compatibility issue with WPML where the Local SEO Contact page was missing the `ContactPage` Schema type for non-default languages.
 
 
 Full changelog can be found here - **[Rank Math changelog](https://rankmath.com/changelog/?utm_source=Plugin&utm_medium=Changelog&utm_campaign=WP)**
