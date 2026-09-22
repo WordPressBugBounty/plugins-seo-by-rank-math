@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita50e6b304efbc99120a5f1c6ce16f39b
+class ComposerStaticInitda5118e07739bcc2a9ee8b03eeea8972
 {
     public static $files = array (
         '6c592737b91137905268e9a0eb968869' => __DIR__ . '/..' . '/wp-media/apply-filters-typed/functions.php',
@@ -61,6 +61,7 @@ class ComposerStaticInita50e6b304efbc99120a5f1c6ce16f39b
         'RankMath\\AI_Visibility\\Api\\Checkout_Controller' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/Api/class-checkout-controller.php',
         'RankMath\\AI_Visibility\\Api\\Trial_Controller' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/Api/class-trial-controller.php',
         'RankMath\\AI_Visibility\\Cache' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/class-cache.php',
+        'RankMath\\AI_Visibility\\Platforms' => __DIR__ . '/../..' . '/includes/modules/ai-visibility/class-platforms.php',
         'RankMath\\Abilities\\AI_Visibility\\Create_AI_Visibility_Brand' => __DIR__ . '/../..' . '/includes/abilities/ai-visibility/class-create-ai-visibility-brand.php',
         'RankMath\\Abilities\\AI_Visibility\\Get_AI_Visibility_Brand_Insights' => __DIR__ . '/../..' . '/includes/abilities/ai-visibility/class-get-ai-visibility-brand-insights.php',
         'RankMath\\Abilities\\AI_Visibility\\Get_AI_Visibility_Brand_Queries' => __DIR__ . '/../..' . '/includes/abilities/ai-visibility/class-get-ai-visibility-brand-queries.php',
@@ -80,6 +81,8 @@ class ComposerStaticInita50e6b304efbc99120a5f1c6ce16f39b
         'RankMath\\Abilities\\Link_Genius\\Link_Report_Runner' => __DIR__ . '/../..' . '/includes/abilities/link-genius/class-link-report-runner.php',
         'RankMath\\Abilities\\Link_Genius\\Post_Links_Runner' => __DIR__ . '/../..' . '/includes/abilities/link-genius/class-post-links-runner.php',
         'RankMath\\Abilities\\Link_Genius\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/link-genius/class-subscriber.php',
+        'RankMath\\Abilities\\Monitor_404\\Get_404_Logs' => __DIR__ . '/../..' . '/includes/abilities/monitor-404/class-get-404-logs.php',
+        'RankMath\\Abilities\\Monitor_404\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/monitor-404/class-subscriber.php',
         'RankMath\\Abilities\\Post_SEO\\Get_Post_SEO_Meta' => __DIR__ . '/../..' . '/includes/abilities/post-seo/class-get-post-seo-meta.php',
         'RankMath\\Abilities\\Post_SEO\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/post-seo/class-subscriber.php',
         'RankMath\\Abilities\\Redirections\\Get_Redirections' => __DIR__ . '/../..' . '/includes/abilities/redirections/class-get-redirections.php',
@@ -109,6 +112,8 @@ class ComposerStaticInita50e6b304efbc99120a5f1c6ce16f39b
         'RankMath\\Abilities\\Settings\\Set_Sitemap_Settings' => __DIR__ . '/../..' . '/includes/abilities/settings/class-set-sitemap-settings.php',
         'RankMath\\Abilities\\Settings\\Set_Website_Identity' => __DIR__ . '/../..' . '/includes/abilities/settings/class-set-website-identity.php',
         'RankMath\\Abilities\\Settings\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/settings/class-subscriber.php',
+        'RankMath\\Abilities\\Sitemap\\Get_Sitemap_Status' => __DIR__ . '/../..' . '/includes/abilities/sitemap/class-get-sitemap-status.php',
+        'RankMath\\Abilities\\Sitemap\\Subscriber' => __DIR__ . '/../..' . '/includes/abilities/sitemap/class-subscriber.php',
         'RankMath\\Abilities\\Subscriber_Interface' => __DIR__ . '/../..' . '/includes/abilities/interface-subscriber.php',
         'RankMath\\Admin\\Admin' => __DIR__ . '/../..' . '/includes/admin/class-admin.php',
         'RankMath\\Admin\\Admin_Breadcrumbs' => __DIR__ . '/../..' . '/includes/admin/class-admin-breadcrumbs.php',
@@ -743,9 +748,9 @@ class ComposerStaticInita50e6b304efbc99120a5f1c6ce16f39b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita50e6b304efbc99120a5f1c6ce16f39b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita50e6b304efbc99120a5f1c6ce16f39b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInita50e6b304efbc99120a5f1c6ce16f39b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitda5118e07739bcc2a9ee8b03eeea8972::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitda5118e07739bcc2a9ee8b03eeea8972::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitda5118e07739bcc2a9ee8b03eeea8972::$classMap;
 
         }, null, ClassLoader::class);
     }

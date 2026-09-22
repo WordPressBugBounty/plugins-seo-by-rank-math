@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'rankmath/seo-by-rank-math',
-        'pretty_version' => 'v1.0.278',
-        'version' => '1.0.278.0',
-        'reference' => '4a307ad98c67cec9721608cf92a996b96f3f50a7',
+        'pretty_version' => 'v1.0.279',
+        'version' => '1.0.279.0',
+        'reference' => 'f9c63fe7ff6c3cf2d90470a6a60b2fbcfbd48f99',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'cmb2/cmb2' => array(
-            'pretty_version' => 'v2.12.0',
-            'version' => '2.12.0.0',
-            'reference' => '9a3686d42539ee3c1113bd09623f4ffbbee94397',
+            'pretty_version' => 'v2.13.0',
+            'version' => '2.13.0.0',
+            'reference' => '06783dbfdde0f23e89e088652451525d07bcd03a',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../cmb2/cmb2',
             'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'rankmath/seo-by-rank-math' => array(
-            'pretty_version' => 'v1.0.278',
-            'version' => '1.0.278.0',
-            'reference' => '4a307ad98c67cec9721608cf92a996b96f3f50a7',
+            'pretty_version' => 'v1.0.279',
+            'version' => '1.0.279.0',
+            'reference' => 'f9c63fe7ff6c3cf2d90470a6a60b2fbcfbd48f99',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
