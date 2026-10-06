@@ -152,6 +152,7 @@ return array(
     'RankMath\\BuddyPress\\Admin' => $baseDir . '/includes/modules/buddypress/class-admin.php',
     'RankMath\\BuddyPress\\BuddyPress' => $baseDir . '/includes/modules/buddypress/class-buddypress.php',
     'RankMath\\CLI\\Commands' => $baseDir . '/includes/cli/class-commands.php',
+    'RankMath\\CLI\\Sitemap_WPCLI' => $baseDir . '/includes/cli/class-sitemap-wpcli.php',
     'RankMath\\CMB2' => $baseDir . '/includes/class-cmb2.php',
     'RankMath\\Common' => $baseDir . '/includes/class-common.php',
     'RankMath\\Compatibility' => $baseDir . '/includes/class-compatibility.php',

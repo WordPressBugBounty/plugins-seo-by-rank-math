@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitda5118e07739bcc2a9ee8b03eeea8972
+class ComposerStaticInit1a6db0eae96225599b2819e07037bb60
 {
     public static $files = array (
         '6c592737b91137905268e9a0eb968869' => __DIR__ . '/..' . '/wp-media/apply-filters-typed/functions.php',
@@ -198,6 +198,7 @@ class ComposerStaticInitda5118e07739bcc2a9ee8b03eeea8972
         'RankMath\\BuddyPress\\Admin' => __DIR__ . '/../..' . '/includes/modules/buddypress/class-admin.php',
         'RankMath\\BuddyPress\\BuddyPress' => __DIR__ . '/../..' . '/includes/modules/buddypress/class-buddypress.php',
         'RankMath\\CLI\\Commands' => __DIR__ . '/../..' . '/includes/cli/class-commands.php',
+        'RankMath\\CLI\\Sitemap_WPCLI' => __DIR__ . '/../..' . '/includes/cli/class-sitemap-wpcli.php',
         'RankMath\\CMB2' => __DIR__ . '/../..' . '/includes/class-cmb2.php',
         'RankMath\\Common' => __DIR__ . '/../..' . '/includes/class-common.php',
         'RankMath\\Compatibility' => __DIR__ . '/../..' . '/includes/class-compatibility.php',
@@ -748,9 +749,9 @@ class ComposerStaticInitda5118e07739bcc2a9ee8b03eeea8972
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitda5118e07739bcc2a9ee8b03eeea8972::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitda5118e07739bcc2a9ee8b03eeea8972::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitda5118e07739bcc2a9ee8b03eeea8972::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1a6db0eae96225599b2819e07037bb60::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1a6db0eae96225599b2819e07037bb60::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1a6db0eae96225599b2819e07037bb60::$classMap;
 
         }, null, ClassLoader::class);
     }
